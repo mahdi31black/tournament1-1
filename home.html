@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function loadPage() {
+          // لود قالب ثابت
+          const layout = await fetch('moshtarak.html').then(res => res.text());
+          document.body.innerHTML = layout;
+        }
+      
+     loadPage();
+    </script>
+    
+</body>
+</html>

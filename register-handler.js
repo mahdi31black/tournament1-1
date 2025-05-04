@@ -1,4 +1,4 @@
-document.getElementById("register-form").addEventListener("submit", function(e) {
+document.getElementById("rigister-form").addEventListener("submit", function(e) {
     e.preventDefault();
   
     const fullName = document.getElementById("fullName").value.trim();

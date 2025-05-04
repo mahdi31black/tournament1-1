@@ -12,9 +12,16 @@
         const layout = await fetch("moshtarak.html").then(res => res.text());
         document.body.innerHTML = layout;
 
+        await new Promise(resolve => setTimeout(resolve, 100));
+
         const content = await fetch("login-content.html").then(res => res.text());
         document.getElementById("content").innerHTML =content
+        
+        const script = document.createElement("script");
+        script.src = "login.js";
+        document.body.appendChild(script);
         }
+
 
         loadPage();
 
